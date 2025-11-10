@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Carousel</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <meta name="description" content="Image carousel for beginners" />
     <meta name="author" content="Milton Kumirai" />
   </head>
@@ -13,12 +13,12 @@
     <div class="container">
       <h1 class="h-1">Image Carousel</h1>
       <div class="img-container">
-        <img src="images/imaage-6.jpg" alt="car-image" />
+        <img id="displayed-img" src="images/image-6.jpg" alt="car-image" />
       </div>
       <div class="btn-container">
         <div class="buttons">
-          <button class="btn prev">Prev</button>
-          <button class="btn next">Next</button>
+          <button class="btn" id="prev">Prev</button>
+          <button class="btn" id="next">Next</button>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ body {
 }
 
 .h-1 {
-  color: #f2042a;
+  color: #553f96;
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -50,6 +50,15 @@ img {
 }
 
 .btn {
-  padding: 8px 22px;
+  padding: 7px 24px;
   border: none;
+  background-color: #553f96;
+  color: white;
+  border-radius: 2px;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  background-color: #635197;
+  cursor: pointer;
 }
