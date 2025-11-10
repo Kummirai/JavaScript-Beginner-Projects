@@ -24,9 +24,9 @@ const alphaNumerals = [
 let hexColor = [];
 
 displayColor.style.backgroundColor =
-  localStorage.getItem("generatedColor") || "red";
+  localStorage.getItem("generatedColor") || "#F2042A";
 
-hexCode.innerHTML = localStorage.getItem("generatedColor") || "#FF0000";
+hexCode.innerHTML = localStorage.getItem("generatedColor") || "#F2042A";
 
 const generateHexColor = () => {
   for (let num = 0; num < 6; num++) {
