@@ -30,7 +30,8 @@ hexCode.innerHTML = localStorage.getItem("generatedColor") || "#FF0000";
 
 const generateHexColor = () => {
   for (let num = 0; num < 6; num++) {
-    const selectedHex = Math.round(Math.random() * alphaNumerals.length - 1);
+    const selectedHex = Math.floor(Math.random() * alphaNumerals.length);
+
     const hexChar = alphaNumerals[selectedHex];
     hexColor = [...hexColor, hexChar];
   }
