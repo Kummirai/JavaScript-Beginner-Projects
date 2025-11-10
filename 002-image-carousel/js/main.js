@@ -3,15 +3,15 @@ const next = document.querySelector("#next");
 const displayedImage = document.querySelector("#displayed-img");
 
 const gallery = [
-  "images/image-1.jpg",
+  "images/image-1.webp",
 
-  "images/image-2.jpg",
+  "images/image-2.webp",
 
-  "images/image-3.jpg",
+  "images/image-3.webp",
 
-  "images/image-4.jpg",
+  "images/image-4.webp",
 
-  "images/image-5.jpg",
+  "images/image-5.webp",
 
   "images/image-6.jpg",
 
