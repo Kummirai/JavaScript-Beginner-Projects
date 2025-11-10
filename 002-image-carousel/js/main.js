@@ -38,7 +38,8 @@ next.addEventListener("click", () => {
   if (index === gallery.length - 1) {
     index = 0;
     displayedImage.setAttribute("src", gallery[index]);
+  } else {
+    index += 1;
+    displayedImage.setAttribute("src", gallery[index]);
   }
-  index += 1;
-  displayedImage.setAttribute("src", gallery[index]);
 });
