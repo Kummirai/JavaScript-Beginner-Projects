@@ -1,46 +1,44 @@
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
-const displayedImage = document.querySelector("displayed-img");
+const displayedImage = document.querySelector("#displayed-img");
 
 const gallery = [
-  {
-    id: 1,
-    img: "images/image-1.jpg",
-  },
-  {
-    id: 2,
-    img: "images/image-2.jpg",
-  },
-  {
-    id: 3,
-    img: "images/image-3.jpg",
-  },
-  {
-    id: 4,
-    img: "images/image-4.jpg",
-  },
-  {
-    id: 5,
-    img: "images/image-5.jpg",
-  },
-  {
-    id: 6,
-    img: "images/image-6.jpg",
-  },
-  {
-    id: 7,
-    img: "images/image-7.jpg",
-  },
-  {
-    id: 8,
-    img: "images/image-8.jpg",
-  },
+  "images/image-1.jpg",
+
+  "images/image-2.jpg",
+
+  "images/image-3.jpg",
+
+  "images/image-4.jpg",
+
+  "images/image-5.jpg",
+
+  "images/image-6.jpg",
+
+  "images/image-7.jpg",
+
+  "images/image-8.jpg",
 ];
 
+let index = 0;
+
+displayedImage.setAttribute("src", gallery[index]);
+
 prev.addEventListener("click", () => {
-  console.log("prev");
+  if (index === 0) {
+    index = gallery.length - 1;
+    displayedImage.setAttribute("src", gallery[index]);
+  } else {
+    index -= 1;
+    displayedImage.setAttribute("src", gallery[index]);
+  }
 });
 
 next.addEventListener("click", () => {
-  console.log("next");
+  if (index === gallery.length - 1) {
+    index = 0;
+    displayedImage.setAttribute("src", gallery[index]);
+  }
+  index += 1;
+  displayedImage.setAttribute("src", gallery[index]);
 });
